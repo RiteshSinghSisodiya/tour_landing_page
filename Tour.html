@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazing Tours</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 20px;
+      background-color: #222;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      background-image: url('https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .tour-packages {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .package {
+      flex: 1 1 300px;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .package img {
+      width: 100%;
+      height: 400px;
+      object-fit: fit;
+    }
+
+    .package .info {
+      padding: 20px;
+    }
+
+    .package h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .package p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .package .price {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .booking-form {
+      margin-top: 40px;
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    .booking-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="email"],
+    .booking-form select,
+    .booking-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .booking-form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .booking-form button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Amazing Tours</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tours</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="container">
+      <h2>Explore the world with Amazing Tours</h2>
+      <p>Book your dream vacation today!</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Popular Tour Packages</h2>
+
+    <div class="tour-packages">
+      <div class="package">
+        <img
+          src="https://images.pexels.com/photos/2659475/pexels-photo-2659475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Tour Package 1">
+        <div class="info">
+          <h3>Lempiyang Temple</h3>
+          <p><b>Lempuyang Temple</b> sits on the steep slopes of Mount Lempuyang in Bali, with great views of the Mount
+            Agung volcanoin the distance, framed by a famous stone gate (dubbed the <b> ‘Gates of Heaven’</b>). Sadly,
+            the great view also means it draws crowds of tourists every day.</p>
+          <p class="price">$999</p>
+        </div>
+      </div>
+
+      <div class="package">
+        <img
+          src="https://images.pexels.com/photos/5458393/pexels-photo-5458393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Tour Package 2">
+        <div class="info">
+          <h3>Taj Mahal</h3>
+          <p>Welcome to <b>Taj Mahal</b>, one of the wonders of the world. Taj Mahal Tour, See reviews and photos of
+            tours in Agra.</p>
+          <p class="price">$1499</p>
+        </div>
+      </div>
+
+      <div class="package">
+        <img
+          src="https://images.pexels.com/photos/515414/pexels-photo-515414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Tour Package 3">
+        <div class="info">
+          <h3>Aurora Borealis</h3>
+          <p><b>Northern Lights.</b> This special tour offers the perfect Aurora Borealis viewing opportunity from
+            Fairbanks, as well as the chance to be personal dinner guests at an off the grid Alaskan yurt..</p>
+          <p class="price">$1999</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-form">
+      <h2>Book Your Tour</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <select required>
+          <option value="">Select Tour Package</option>
+          <option value="package1">Tour Package 1</option>
+          <option value="package2">Tour Package 2</option>
+          <option value="package3">Tour Package 3</option>
+        </select>
+        <textarea placeholder="Message" rows="5"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2023 Amazing Tours. All rights reserved.
+  </footer>
+</body>
+
+</html>
